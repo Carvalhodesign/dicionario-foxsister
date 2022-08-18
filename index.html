@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário Fox - Luan Carvalho</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="social">
+        <article class="info-social">
+            <div class="autor">
+                <div class="img-container">
+                    <div class="img"></div>
+                </div>
+                    <div class="info">
+                    <span>Autor</span>
+                    FoxSister
+                    <div class="data"><script>
+                        date = new Date().toLocaleDateString();
+                        document.write(date);
+                        </script></div>
+                    </div>
+                    <div class="tags">
+                        <a href="https://www.linkedin.com/in/luan-carvalho-687160222/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                        <a href="https://github.com/Carvalhodesign" target="_blank" rel="noopener noreferrer">Github</a>
+                    </div>
+            </div>
+        </article>
+    </section>
+    <section class="conteudo">
+        <article class="card">   
+            <main class="corpo">
+                <form class="js-formulario">
+                    <input type="text" name="palavra" placeholder="Digite a palavra" required autocomplete="off"/>
+                    <input type="submit" value="Buscar" />
+                </form>
+                <section class="resultado js-resultado display-none">
+                    <div class="carregamento js-carregamento display-none"></div>
+                    <h3 class="resultado_titulo js-resultado_titulo"></h3>
+                    <span class="resultado_descricao js-resultado_descricao "></span>
+
+                </section>
+            </main>                      
+        </article>
+    </section>
+    
+    
+    <script src="./script/script.js"></script>
+</body>
+</html>
+
