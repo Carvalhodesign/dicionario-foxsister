@@ -270,19 +270,15 @@ width: 100%;
 
 @media screen and (max-width: 550px) {
     .conteudo .card main.corpo form {
+        width: 130%;
+        display: flex;        
         
-        row-gap: 30px;
-        display: flex;
     }
     .conteudo .card main.corpo form input[type="text"] {
         width: 50%;
     }
 
-    .conteudo {
-        margin: auto;
-       
-    }
-    
+      
     .social{
         width: none;
         max-width: none;
