@@ -15,7 +15,10 @@ function erroPalavraNaoEncontrada() {
   function PalavraEncontrada(resposta,palavra) {
     elementoResultadoTitulo.textContent =
     palavra;
-    elementoResultadoDescricao.textContent = resposta;
+    txt  = String(resposta);
+    elementoResultadoDescricao.textContent = txt.replaceAll(",",", ");
+  
+
   }
 
   function FraseEncontrada(resposta) {

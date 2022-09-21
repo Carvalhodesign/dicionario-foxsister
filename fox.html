@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Read Text File Tutorial</title>
+  </head>
+  <body>
+    <input type="file" onchange="loadFile(this.files[0])">
+    <br>
+    <pre id="output"></pre>
+    <script>
+      async function loadFile(file) {
+        let text = await file.text();
+        customItems = text.split("\n");
+        
+        for (i=0;i<customItems.length;i++){
+          palavra = customItems[i].split("/"); 
+        document.getElementById('output').textContent = document.getElementById('output').textContent +",'" +palavra[0]+"'";
+        }
+        alert(customItems.length);
+    }
+    </script>
+  </body>
+</html>
